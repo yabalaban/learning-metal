@@ -13,6 +13,50 @@
 		E233066D28E3D7B000CCBD04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065B28E3D7AF00CCBD04 /* ContentView.swift */; };
 		E233066E28E3D7B000CCBD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E233065C28E3D7B000CCBD04 /* Assets.xcassets */; };
 		E233066F28E3D7B000CCBD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E233065C28E3D7B000CCBD04 /* Assets.xcassets */; };
+		E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067A28E3D7F000CCBD04 /* MetalView.swift */; };
+		E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067A28E3D7F000CCBD04 /* MetalView.swift */; };
+		E233067F28E3D94300CCBD04 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067E28E3D94300CCBD04 /* Options.swift */; };
+		E233068028E3D94300CCBD04 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067E28E3D94300CCBD04 /* Options.swift */; };
+		E233068228E3D99700CCBD04 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233068128E3D99700CCBD04 /* Renderer.swift */; };
+		E233068328E3D99700CCBD04 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233068128E3D99700CCBD04 /* Renderer.swift */; };
+		E233068828E3F5E400CCBD04 /* Vertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = E233068728E3F5E400CCBD04 /* Vertex.metal */; };
+		E233068928E3F5E400CCBD04 /* Vertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = E233068728E3F5E400CCBD04 /* Vertex.metal */; };
+		E233068B28E3F5F000CCBD04 /* Fragment.metal in Sources */ = {isa = PBXBuildFile; fileRef = E233068A28E3F5F000CCBD04 /* Fragment.metal */; };
+		E233068C28E3F5F000CCBD04 /* Fragment.metal in Sources */ = {isa = PBXBuildFile; fileRef = E233068A28E3F5F000CCBD04 /* Fragment.metal */; };
+		E233068F28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233068E28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift */; };
+		E233069028E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233068E28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift */; };
+		E233069228E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069128E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift */; };
+		E233069328E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069128E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift */; };
+		E233069628E3FBA200CCBD04 /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069528E3FBA200CCBD04 /* MathLibrary.swift */; };
+		E233069728E3FBA200CCBD04 /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069528E3FBA200CCBD04 /* MathLibrary.swift */; };
+		E233069928E3FBC200CCBD04 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069828E3FBC200CCBD04 /* Transform.swift */; };
+		E233069A28E3FBC200CCBD04 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069828E3FBC200CCBD04 /* Transform.swift */; };
+		E233069C28E3FBC800CCBD04 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069B28E3FBC800CCBD04 /* Model.swift */; };
+		E233069D28E3FBC800CCBD04 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069B28E3FBC800CCBD04 /* Model.swift */; };
+		E233069F28E3FCE900CCBD04 /* ModelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */; };
+		E23306A028E3FCE900CCBD04 /* ModelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */; };
+		E23306B128E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */; };
+		E23306B228E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */; };
+		E23306B328E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */; };
+		E23306B428E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */; };
+		E23306B528E40C4B00CCBD04 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A628E40C4A00CCBD04 /* plane.obj */; };
+		E23306B628E40C4B00CCBD04 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A628E40C4A00CCBD04 /* plane.obj */; };
+		E23306B728E40C4B00CCBD04 /* plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A728E40C4A00CCBD04 /* plane.mtl */; };
+		E23306B828E40C4B00CCBD04 /* plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A728E40C4A00CCBD04 /* plane.mtl */; };
+		E23306B928E40C4B00CCBD04 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306A828E40C4A00CCBD04 /* ground.png */; };
+		E23306BA28E40C4B00CCBD04 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306A828E40C4A00CCBD04 /* ground.png */; };
+		E23306BB28E40C4B00CCBD04 /* barn-ground.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306AA28E40C4A00CCBD04 /* barn-ground.png */; };
+		E23306BC28E40C4B00CCBD04 /* barn-ground.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306AA28E40C4A00CCBD04 /* barn-ground.png */; };
+		E23306BD28E40C4B00CCBD04 /* lowpoly-barn-color.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306AB28E40C4A00CCBD04 /* lowpoly-barn-color.png */; };
+		E23306BE28E40C4B00CCBD04 /* lowpoly-barn-color.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306AB28E40C4A00CCBD04 /* lowpoly-barn-color.png */; };
+		E23306BF28E40C4B00CCBD04 /* train.usd in Resources */ = {isa = PBXBuildFile; fileRef = E23306AC28E40C4A00CCBD04 /* train.usd */; };
+		E23306C028E40C4B00CCBD04 /* train.usd in Resources */ = {isa = PBXBuildFile; fileRef = E23306AC28E40C4A00CCBD04 /* train.usd */; };
+		E23306C128E40C4B00CCBD04 /* lowpoly-house-color.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306AE28E40C4A00CCBD04 /* lowpoly-house-color.png */; };
+		E23306C228E40C4B00CCBD04 /* lowpoly-house-color.png in Resources */ = {isa = PBXBuildFile; fileRef = E23306AE28E40C4A00CCBD04 /* lowpoly-house-color.png */; };
+		E23306C328E40C4B00CCBD04 /* lowpoly-house.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306AF28E40C4A00CCBD04 /* lowpoly-house.obj */; };
+		E23306C428E40C4B00CCBD04 /* lowpoly-house.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306AF28E40C4A00CCBD04 /* lowpoly-house.obj */; };
+		E23306C528E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */; };
+		E23306C628E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +66,30 @@
 		E233066128E3D7B000CCBD04 /* learning-metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E233066728E3D7B000CCBD04 /* learning-metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E233066928E3D7B000CCBD04 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E233067A28E3D7F000CCBD04 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		E233067E28E3D94300CCBD04 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		E233068128E3D99700CCBD04 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		E233068528E3F5AC00CCBD04 /* ShaderDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderDefs.h; sourceTree = "<group>"; };
+		E233068728E3F5E400CCBD04 /* Vertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vertex.metal; sourceTree = "<group>"; };
+		E233068A28E3F5F000CCBD04 /* Fragment.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fragment.metal; sourceTree = "<group>"; };
+		E233068E28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLVertexDescriptor+Default.swift"; sourceTree = "<group>"; };
+		E233069128E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MDLVertexDescriptor+Default.swift"; sourceTree = "<group>"; };
+		E233069528E3FBA200CCBD04 /* MathLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
+		E233069828E3FBC200CCBD04 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		E233069B28E3FBC800CCBD04 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRegistry.swift; sourceTree = "<group>"; };
+		E23306A128E40A2000CCBD04 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.obj"; sourceTree = "<group>"; };
+		E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.mtl"; sourceTree = "<group>"; };
+		E23306A628E40C4A00CCBD04 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		E23306A728E40C4A00CCBD04 /* plane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.mtl; sourceTree = "<group>"; };
+		E23306A828E40C4A00CCBD04 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		E23306AA28E40C4A00CCBD04 /* barn-ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barn-ground.png"; sourceTree = "<group>"; };
+		E23306AB28E40C4A00CCBD04 /* lowpoly-barn-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowpoly-barn-color.png"; sourceTree = "<group>"; };
+		E23306AC28E40C4A00CCBD04 /* train.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = train.usd; sourceTree = "<group>"; };
+		E23306AE28E40C4A00CCBD04 /* lowpoly-house-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowpoly-house-color.png"; sourceTree = "<group>"; };
+		E23306AF28E40C4A00CCBD04 /* lowpoly-house.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lowpoly-house.obj"; sourceTree = "<group>"; };
+		E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lowpoly-house.mtl"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +122,19 @@
 		E233065928E3D7AF00CCBD04 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E23306A228E40C1500CCBD04 /* Models */,
+				E233068D28E3F69B00CCBD04 /* Extensions */,
+				E233068628E3F5D400CCBD04 /* Shaders */,
+				E233067828E3D7C800CCBD04 /* SwiftUI */,
+				E233069428E3FB9500CCBD04 /* Utility */,
+				E233068128E3D99700CCBD04 /* Renderer.swift */,
+				E233069828E3FBC200CCBD04 /* Transform.swift */,
+				E233069B28E3FBC800CCBD04 /* Model.swift */,
+				E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */,
 				E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */,
-				E233065B28E3D7AF00CCBD04 /* ContentView.swift */,
 				E233065C28E3D7B000CCBD04 /* Assets.xcassets */,
+				E233068528E3F5AC00CCBD04 /* ShaderDefs.h */,
+				E23306A128E40A2000CCBD04 /* Common.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,6 +154,92 @@
 				E233066928E3D7B000CCBD04 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		E233067828E3D7C800CCBD04 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E233067D28E3D93000CCBD04 /* Model */,
+				E233065B28E3D7AF00CCBD04 /* ContentView.swift */,
+				E233067A28E3D7F000CCBD04 /* MetalView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		E233067D28E3D93000CCBD04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E233067E28E3D94300CCBD04 /* Options.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E233068628E3F5D400CCBD04 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E233068728E3F5E400CCBD04 /* Vertex.metal */,
+				E233068A28E3F5F000CCBD04 /* Fragment.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		E233068D28E3F69B00CCBD04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E233068E28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift */,
+				E233069128E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E233069428E3FB9500CCBD04 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E233069528E3FBA200CCBD04 /* MathLibrary.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E23306A228E40C1500CCBD04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E23306A528E40C4A00CCBD04 /* Ground */,
+				E23306AD28E40C4A00CCBD04 /* LowPolyHouse */,
+				E23306A928E40C4A00CCBD04 /* Textures */,
+				E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */,
+				E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */,
+				E23306AC28E40C4A00CCBD04 /* train.usd */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E23306A528E40C4A00CCBD04 /* Ground */ = {
+			isa = PBXGroup;
+			children = (
+				E23306A628E40C4A00CCBD04 /* plane.obj */,
+				E23306A728E40C4A00CCBD04 /* plane.mtl */,
+				E23306A828E40C4A00CCBD04 /* ground.png */,
+			);
+			path = Ground;
+			sourceTree = "<group>";
+		};
+		E23306A928E40C4A00CCBD04 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				E23306AA28E40C4A00CCBD04 /* barn-ground.png */,
+				E23306AB28E40C4A00CCBD04 /* lowpoly-barn-color.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		E23306AD28E40C4A00CCBD04 /* LowPolyHouse */ = {
+			isa = PBXGroup;
+			children = (
+				E23306AE28E40C4A00CCBD04 /* lowpoly-house-color.png */,
+				E23306AF28E40C4A00CCBD04 /* lowpoly-house.obj */,
+				E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */,
+			);
+			path = LowPolyHouse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +321,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23306B928E40C4B00CCBD04 /* ground.png in Resources */,
+				E23306C128E40C4B00CCBD04 /* lowpoly-house-color.png in Resources */,
+				E23306C328E40C4B00CCBD04 /* lowpoly-house.obj in Resources */,
 				E233066E28E3D7B000CCBD04 /* Assets.xcassets in Resources */,
+				E23306B328E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */,
+				E23306BD28E40C4B00CCBD04 /* lowpoly-barn-color.png in Resources */,
+				E23306B728E40C4B00CCBD04 /* plane.mtl in Resources */,
+				E23306C528E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */,
+				E23306BB28E40C4B00CCBD04 /* barn-ground.png in Resources */,
+				E23306B528E40C4B00CCBD04 /* plane.obj in Resources */,
+				E23306B128E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */,
+				E23306BF28E40C4B00CCBD04 /* train.usd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +340,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23306BA28E40C4B00CCBD04 /* ground.png in Resources */,
+				E23306C228E40C4B00CCBD04 /* lowpoly-house-color.png in Resources */,
+				E23306C428E40C4B00CCBD04 /* lowpoly-house.obj in Resources */,
 				E233066F28E3D7B000CCBD04 /* Assets.xcassets in Resources */,
+				E23306B428E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */,
+				E23306BE28E40C4B00CCBD04 /* lowpoly-barn-color.png in Resources */,
+				E23306B828E40C4B00CCBD04 /* plane.mtl in Resources */,
+				E23306C628E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */,
+				E23306BC28E40C4B00CCBD04 /* barn-ground.png in Resources */,
+				E23306B628E40C4B00CCBD04 /* plane.obj in Resources */,
+				E23306B228E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */,
+				E23306C028E40C4B00CCBD04 /* train.usd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +362,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E233069928E3FBC200CCBD04 /* Transform.swift in Sources */,
+				E233067F28E3D94300CCBD04 /* Options.swift in Sources */,
+				E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */,
+				E233069C28E3FBC800CCBD04 /* Model.swift in Sources */,
+				E233068F28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
+				E233069F28E3FCE900CCBD04 /* ModelRegistry.swift in Sources */,
 				E233066C28E3D7B000CCBD04 /* ContentView.swift in Sources */,
+				E233068828E3F5E400CCBD04 /* Vertex.metal in Sources */,
+				E233069228E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
+				E233068228E3D99700CCBD04 /* Renderer.swift in Sources */,
+				E233068B28E3F5F000CCBD04 /* Fragment.metal in Sources */,
 				E233066A28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */,
+				E233069628E3FBA200CCBD04 /* MathLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +382,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E233069A28E3FBC200CCBD04 /* Transform.swift in Sources */,
+				E233068028E3D94300CCBD04 /* Options.swift in Sources */,
+				E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */,
+				E233069D28E3FBC800CCBD04 /* Model.swift in Sources */,
+				E233069028E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
+				E23306A028E3FCE900CCBD04 /* ModelRegistry.swift in Sources */,
 				E233066D28E3D7B000CCBD04 /* ContentView.swift in Sources */,
+				E233068928E3F5E400CCBD04 /* Vertex.metal in Sources */,
+				E233069328E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
+				E233068328E3D99700CCBD04 /* Renderer.swift in Sources */,
+				E233068C28E3F5F000CCBD04 /* Fragment.metal in Sources */,
 				E233066B28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */,
+				E233069728E3FBA200CCBD04 /* MathLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +408,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -247,6 +456,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/Common.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -258,6 +468,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -298,6 +509,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/Common.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -372,7 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2XHZ3SQBU4;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -400,7 +612,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2XHZ3SQBU4;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

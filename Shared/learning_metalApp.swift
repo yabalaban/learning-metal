@@ -2,7 +2,7 @@
 //  learning_metalApp.swift
 //  Shared
 //
-//  Created by Alexander Balaban on 28/09/2022.
+//  Created by Alexander Balaban.
 //
 
 import SwiftUI
@@ -12,6 +12,7 @@ struct learning_metalApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .navigationTitle("Learning Metal by Tutorials")
         }
     }
 }
