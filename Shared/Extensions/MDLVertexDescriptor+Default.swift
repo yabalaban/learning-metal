@@ -10,12 +10,25 @@ import MetalKit
 extension MDLVertexDescriptor {
     static var defaultLayout: MDLVertexDescriptor {
         let vertexDescriptor = MDLVertexDescriptor()
+        
         var offset = 0
-        vertexDescriptor.attributes[0] = MDLVertexAttribute(name: MDLVertexAttributePosition, format: .float3, offset: 0, bufferIndex: 0)
+        vertexDescriptor.attributes[Position.index] = MDLVertexAttribute(name: MDLVertexAttributePosition, format: .float3, offset: offset, bufferIndex: VertexBuffer.index)
         offset += MemoryLayout<float3>.stride
-        vertexDescriptor.attributes[1] = MDLVertexAttribute(name: MDLVertexAttributeNormal, format: .float3, offset: offset, bufferIndex: 0)
+        vertexDescriptor.attributes[Normal.index] = MDLVertexAttribute(name: MDLVertexAttributeNormal, format: .float3, offset: offset, bufferIndex: VertexBuffer.index)
         offset += MemoryLayout<float3>.stride
-        vertexDescriptor.layouts[0] = MDLVertexBufferLayout(stride: offset)
+        vertexDescriptor.layouts[VertexBuffer.index] = MDLVertexBufferLayout(stride: offset)
+        
+        return vertexDescriptor
+    }
+    
+    static var uvLayout: MDLVertexDescriptor {
+        let vertexDescriptor = self.defaultLayout
+        
+        var offset = 0
+        vertexDescriptor.attributes[UV.index] = MDLVertexAttribute(name: MDLVertexAttributeTextureCoordinate, format: .float2, offset: offset, bufferIndex: UVBuffer.index)
+        offset += MemoryLayout<float2>.stride
+        vertexDescriptor.layouts[UVBuffer.index] = MDLVertexBufferLayout(stride: offset)
+        
         return vertexDescriptor
     }
 }

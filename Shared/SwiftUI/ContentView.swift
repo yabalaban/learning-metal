@@ -13,13 +13,13 @@ private struct Style {
 }
 
 struct ContentView: View {
-    @State var modelType: ModelType = .house
+    @State var stageType: StageType = .house
     
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
                 HStack {
-                    MetalView(options: Options(modelType: modelType))
+                    MetalView(options: Options(stageType: stageType))
                         .border(Color.black, width: Style.borderWidth)
                         .frame(width: Style.frameSize, height: Style.frameSize)
                     MetalView(options: .plain)
@@ -28,11 +28,11 @@ struct ContentView: View {
                 }
             }
             Picker(
-                selection: $modelType,
-                label: Text("Model")) {
-                    Text("House").tag(ModelType.house)
-                    Text("Train").tag(ModelType.train)
-                    Text("Sonic").tag(ModelType.sonic)
+                selection: $stageType,
+                label: Text("Stage")) {
+                    Text("House").tag(StageType.house)
+                    Text("Sonic").tag(StageType.sonic)
+                    Text("Train").tag(StageType.train)
                 }
                 .pickerStyle(SegmentedPickerStyle())
         }

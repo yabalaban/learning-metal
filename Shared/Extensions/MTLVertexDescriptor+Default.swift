@@ -11,4 +11,8 @@ extension MTLVertexDescriptor {
     static var defaultLayout: MTLVertexDescriptor? {
         MTKMetalVertexDescriptorFromModelIO(.defaultLayout)
     }
+    
+    static var uvLayout: MTLVertexDescriptor? {
+        MTKMetalVertexDescriptorFromModelIO(.uvLayout)
+    }
 }

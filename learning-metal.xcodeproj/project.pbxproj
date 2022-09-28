@@ -35,10 +35,6 @@
 		E233069D28E3FBC800CCBD04 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069B28E3FBC800CCBD04 /* Model.swift */; };
 		E233069F28E3FCE900CCBD04 /* ModelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */; };
 		E23306A028E3FCE900CCBD04 /* ModelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */; };
-		E23306B128E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */; };
-		E23306B228E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */; };
-		E23306B328E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */; };
-		E23306B428E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */; };
 		E23306B528E40C4B00CCBD04 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A628E40C4A00CCBD04 /* plane.obj */; };
 		E23306B628E40C4B00CCBD04 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306A628E40C4A00CCBD04 /* plane.obj */; };
 		E23306B728E40C4B00CCBD04 /* plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306A728E40C4A00CCBD04 /* plane.mtl */; };
@@ -57,6 +53,30 @@
 		E23306C428E40C4B00CCBD04 /* lowpoly-house.obj in Resources */ = {isa = PBXBuildFile; fileRef = E23306AF28E40C4A00CCBD04 /* lowpoly-house.obj */; };
 		E23306C528E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */; };
 		E23306C628E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */; };
+		E298D04428E4C242009778B7 /* Common+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D04328E4C242009778B7 /* Common+Extensions.swift */; };
+		E298D04528E4C242009778B7 /* Common+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D04328E4C242009778B7 /* Common+Extensions.swift */; };
+		E298D04728E4C388009778B7 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D04628E4C388009778B7 /* Mesh.swift */; };
+		E298D04828E4C388009778B7 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D04628E4C388009778B7 /* Mesh.swift */; };
+		E298D04A28E4CC29009778B7 /* TextureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D04928E4CC29009778B7 /* TextureController.swift */; };
+		E298D04B28E4CC29009778B7 /* TextureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D04928E4CC29009778B7 /* TextureController.swift */; };
+		E298D05328E4D0FE009778B7 /* 64124be4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D04D28E4D0FE009778B7 /* 64124be4.jpg */; };
+		E298D05428E4D0FE009778B7 /* 64124be4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D04D28E4D0FE009778B7 /* 64124be4.jpg */; };
+		E298D05528E4D0FE009778B7 /* sonic-the-hedgehog.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E298D04E28E4D0FE009778B7 /* sonic-the-hedgehog.mtl */; };
+		E298D05628E4D0FE009778B7 /* sonic-the-hedgehog.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E298D04E28E4D0FE009778B7 /* sonic-the-hedgehog.mtl */; };
+		E298D05728E4D0FE009778B7 /* bab97353.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D04F28E4D0FE009778B7 /* bab97353.jpg */; };
+		E298D05828E4D0FE009778B7 /* bab97353.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D04F28E4D0FE009778B7 /* bab97353.jpg */; };
+		E298D05928E4D0FE009778B7 /* d1419efe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D05028E4D0FE009778B7 /* d1419efe.jpg */; };
+		E298D05A28E4D0FE009778B7 /* d1419efe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D05028E4D0FE009778B7 /* d1419efe.jpg */; };
+		E298D05B28E4D0FE009778B7 /* f1f6d3cb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D05128E4D0FE009778B7 /* f1f6d3cb.jpg */; };
+		E298D05C28E4D0FE009778B7 /* f1f6d3cb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E298D05128E4D0FE009778B7 /* f1f6d3cb.jpg */; };
+		E298D05D28E4D0FE009778B7 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E298D05228E4D0FE009778B7 /* sonic-the-hedgehog.obj */; };
+		E298D05E28E4D0FE009778B7 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E298D05228E4D0FE009778B7 /* sonic-the-hedgehog.obj */; };
+		E298D06128E4E03D009778B7 /* Textures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E298D06028E4E03D009778B7 /* Textures.xcassets */; };
+		E298D06228E4E03D009778B7 /* Textures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E298D06028E4E03D009778B7 /* Textures.xcassets */; };
+		E298D06428E4E6AD009778B7 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06328E4E6AD009778B7 /* Stage.swift */; };
+		E298D06528E4E6AD009778B7 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06328E4E6AD009778B7 /* Stage.swift */; };
+		E298D06728E4E8F7009778B7 /* StageRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06628E4E8F7009778B7 /* StageRegistry.swift */; };
+		E298D06828E4E8F7009778B7 /* StageRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06628E4E8F7009778B7 /* StageRegistry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,8 +99,6 @@
 		E233069B28E3FBC800CCBD04 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRegistry.swift; sourceTree = "<group>"; };
 		E23306A128E40A2000CCBD04 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.obj"; sourceTree = "<group>"; };
-		E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.mtl"; sourceTree = "<group>"; };
 		E23306A628E40C4A00CCBD04 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
 		E23306A728E40C4A00CCBD04 /* plane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.mtl; sourceTree = "<group>"; };
 		E23306A828E40C4A00CCBD04 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
@@ -90,6 +108,19 @@
 		E23306AE28E40C4A00CCBD04 /* lowpoly-house-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowpoly-house-color.png"; sourceTree = "<group>"; };
 		E23306AF28E40C4A00CCBD04 /* lowpoly-house.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lowpoly-house.obj"; sourceTree = "<group>"; };
 		E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lowpoly-house.mtl"; sourceTree = "<group>"; };
+		E298D04328E4C242009778B7 /* Common+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Extensions.swift"; sourceTree = "<group>"; };
+		E298D04628E4C388009778B7 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		E298D04928E4CC29009778B7 /* TextureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureController.swift; sourceTree = "<group>"; };
+		E298D04D28E4D0FE009778B7 /* 64124be4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 64124be4.jpg; sourceTree = "<group>"; };
+		E298D04E28E4D0FE009778B7 /* sonic-the-hedgehog.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.mtl"; sourceTree = "<group>"; };
+		E298D04F28E4D0FE009778B7 /* bab97353.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bab97353.jpg; sourceTree = "<group>"; };
+		E298D05028E4D0FE009778B7 /* d1419efe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d1419efe.jpg; sourceTree = "<group>"; };
+		E298D05128E4D0FE009778B7 /* f1f6d3cb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f1f6d3cb.jpg; sourceTree = "<group>"; };
+		E298D05228E4D0FE009778B7 /* sonic-the-hedgehog.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.obj"; sourceTree = "<group>"; };
+		E298D05F28E4D117009778B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E298D06028E4E03D009778B7 /* Textures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Textures.xcassets; sourceTree = "<group>"; };
+		E298D06328E4E6AD009778B7 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		E298D06628E4E8F7009778B7 /* StageRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRegistry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,19 +153,21 @@
 		E233065928E3D7AF00CCBD04 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E298D06928E4E904009778B7 /* Objects */,
 				E23306A228E40C1500CCBD04 /* Models */,
 				E233068D28E3F69B00CCBD04 /* Extensions */,
 				E233068628E3F5D400CCBD04 /* Shaders */,
 				E233067828E3D7C800CCBD04 /* SwiftUI */,
 				E233069428E3FB9500CCBD04 /* Utility */,
 				E233068128E3D99700CCBD04 /* Renderer.swift */,
+				E298D04928E4CC29009778B7 /* TextureController.swift */,
 				E233069828E3FBC200CCBD04 /* Transform.swift */,
-				E233069B28E3FBC800CCBD04 /* Model.swift */,
-				E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */,
+				E298D04628E4C388009778B7 /* Mesh.swift */,
 				E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */,
 				E233068528E3F5AC00CCBD04 /* ShaderDefs.h */,
 				E23306A128E40A2000CCBD04 /* Common.h */,
 				E233065C28E3D7B000CCBD04 /* Assets.xcassets */,
+				E298D06028E4E03D009778B7 /* Textures.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -188,6 +221,7 @@
 			children = (
 				E233068E28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift */,
 				E233069128E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift */,
+				E298D04328E4C242009778B7 /* Common+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,12 +237,12 @@
 		E23306A228E40C1500CCBD04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E298D04C28E4D0FE009778B7 /* Sonic */,
 				E23306A528E40C4A00CCBD04 /* Ground */,
 				E23306AD28E40C4A00CCBD04 /* LowPolyHouse */,
 				E23306A928E40C4A00CCBD04 /* Textures */,
-				E23306A428E40C4A00CCBD04 /* sonic-the-hedgehog.mtl */,
-				E23306A328E40C4A00CCBD04 /* sonic-the-hedgehog.obj */,
 				E23306AC28E40C4A00CCBD04 /* train.usd */,
+				E298D05F28E4D117009778B7 /* README.md */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +274,30 @@
 				E23306B028E40C4A00CCBD04 /* lowpoly-house.mtl */,
 			);
 			path = LowPolyHouse;
+			sourceTree = "<group>";
+		};
+		E298D04C28E4D0FE009778B7 /* Sonic */ = {
+			isa = PBXGroup;
+			children = (
+				E298D04D28E4D0FE009778B7 /* 64124be4.jpg */,
+				E298D04E28E4D0FE009778B7 /* sonic-the-hedgehog.mtl */,
+				E298D04F28E4D0FE009778B7 /* bab97353.jpg */,
+				E298D05028E4D0FE009778B7 /* d1419efe.jpg */,
+				E298D05128E4D0FE009778B7 /* f1f6d3cb.jpg */,
+				E298D05228E4D0FE009778B7 /* sonic-the-hedgehog.obj */,
+			);
+			path = Sonic;
+			sourceTree = "<group>";
+		};
+		E298D06928E4E904009778B7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E298D06628E4E8F7009778B7 /* StageRegistry.swift */,
+				E298D06328E4E6AD009778B7 /* Stage.swift */,
+				E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */,
+				E233069B28E3FBC800CCBD04 /* Model.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,16 +382,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23306B928E40C4B00CCBD04 /* ground.png in Resources */,
+				E298D05D28E4D0FE009778B7 /* sonic-the-hedgehog.obj in Resources */,
 				E23306C128E40C4B00CCBD04 /* lowpoly-house-color.png in Resources */,
 				E23306C328E40C4B00CCBD04 /* lowpoly-house.obj in Resources */,
 				E233066E28E3D7B000CCBD04 /* Assets.xcassets in Resources */,
-				E23306B328E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */,
+				E298D06128E4E03D009778B7 /* Textures.xcassets in Resources */,
+				E298D05328E4D0FE009778B7 /* 64124be4.jpg in Resources */,
 				E23306BD28E40C4B00CCBD04 /* lowpoly-barn-color.png in Resources */,
 				E23306B728E40C4B00CCBD04 /* plane.mtl in Resources */,
+				E298D05528E4D0FE009778B7 /* sonic-the-hedgehog.mtl in Resources */,
+				E298D05B28E4D0FE009778B7 /* f1f6d3cb.jpg in Resources */,
+				E298D05728E4D0FE009778B7 /* bab97353.jpg in Resources */,
 				E23306C528E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */,
 				E23306BB28E40C4B00CCBD04 /* barn-ground.png in Resources */,
 				E23306B528E40C4B00CCBD04 /* plane.obj in Resources */,
-				E23306B128E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */,
+				E298D05928E4D0FE009778B7 /* d1419efe.jpg in Resources */,
 				E23306BF28E40C4B00CCBD04 /* train.usd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,16 +406,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23306BA28E40C4B00CCBD04 /* ground.png in Resources */,
+				E298D05E28E4D0FE009778B7 /* sonic-the-hedgehog.obj in Resources */,
 				E23306C228E40C4B00CCBD04 /* lowpoly-house-color.png in Resources */,
 				E23306C428E40C4B00CCBD04 /* lowpoly-house.obj in Resources */,
 				E233066F28E3D7B000CCBD04 /* Assets.xcassets in Resources */,
-				E23306B428E40C4B00CCBD04 /* sonic-the-hedgehog.mtl in Resources */,
+				E298D06228E4E03D009778B7 /* Textures.xcassets in Resources */,
+				E298D05428E4D0FE009778B7 /* 64124be4.jpg in Resources */,
 				E23306BE28E40C4B00CCBD04 /* lowpoly-barn-color.png in Resources */,
 				E23306B828E40C4B00CCBD04 /* plane.mtl in Resources */,
+				E298D05628E4D0FE009778B7 /* sonic-the-hedgehog.mtl in Resources */,
+				E298D05C28E4D0FE009778B7 /* f1f6d3cb.jpg in Resources */,
+				E298D05828E4D0FE009778B7 /* bab97353.jpg in Resources */,
 				E23306C628E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */,
 				E23306BC28E40C4B00CCBD04 /* barn-ground.png in Resources */,
 				E23306B628E40C4B00CCBD04 /* plane.obj in Resources */,
-				E23306B228E40C4B00CCBD04 /* sonic-the-hedgehog.obj in Resources */,
+				E298D05A28E4D0FE009778B7 /* d1419efe.jpg in Resources */,
 				E23306C028E40C4B00CCBD04 /* train.usd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,14 +432,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E298D04428E4C242009778B7 /* Common+Extensions.swift in Sources */,
 				E233069928E3FBC200CCBD04 /* Transform.swift in Sources */,
+				E298D06728E4E8F7009778B7 /* StageRegistry.swift in Sources */,
 				E233067F28E3D94300CCBD04 /* Options.swift in Sources */,
 				E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069C28E3FBC800CCBD04 /* Model.swift in Sources */,
 				E233068F28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
 				E233069F28E3FCE900CCBD04 /* ModelRegistry.swift in Sources */,
+				E298D04A28E4CC29009778B7 /* TextureController.swift in Sources */,
 				E233066C28E3D7B000CCBD04 /* ContentView.swift in Sources */,
 				E233068828E3F5E400CCBD04 /* Vertex.metal in Sources */,
+				E298D06428E4E6AD009778B7 /* Stage.swift in Sources */,
+				E298D04728E4C388009778B7 /* Mesh.swift in Sources */,
 				E233069228E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
 				E233068228E3D99700CCBD04 /* Renderer.swift in Sources */,
 				E233068B28E3F5F000CCBD04 /* Fragment.metal in Sources */,
@@ -384,14 +457,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E298D04528E4C242009778B7 /* Common+Extensions.swift in Sources */,
 				E233069A28E3FBC200CCBD04 /* Transform.swift in Sources */,
+				E298D06828E4E8F7009778B7 /* StageRegistry.swift in Sources */,
 				E233068028E3D94300CCBD04 /* Options.swift in Sources */,
 				E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069D28E3FBC800CCBD04 /* Model.swift in Sources */,
 				E233069028E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
 				E23306A028E3FCE900CCBD04 /* ModelRegistry.swift in Sources */,
+				E298D04B28E4CC29009778B7 /* TextureController.swift in Sources */,
 				E233066D28E3D7B000CCBD04 /* ContentView.swift in Sources */,
 				E233068928E3F5E400CCBD04 /* Vertex.metal in Sources */,
+				E298D06528E4E6AD009778B7 /* Stage.swift in Sources */,
+				E298D04828E4C388009778B7 /* Mesh.swift in Sources */,
 				E233069328E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
 				E233068328E3D99700CCBD04 /* Renderer.swift in Sources */,
 				E233068C28E3F5F000CCBD04 /* Fragment.metal in Sources */,

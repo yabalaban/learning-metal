@@ -8,15 +8,15 @@
 import SwiftUI
 
 enum RenderChoice: Hashable {
-    case model(ModelType)
+    case stage(StageType)
     case plain
 }
 
 final class Options: ObservableObject {
     @Published var renderChoice: RenderChoice
     
-    init(modelType: ModelType) {
-        renderChoice = .model(modelType)
+    init(stageType: StageType) {
+        renderChoice = .stage(stageType)
     }
     
     init() {
