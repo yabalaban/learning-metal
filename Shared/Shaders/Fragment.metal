@@ -7,28 +7,10 @@
 
 #include <metal_stdlib>
 
+#import "../Common.h"
+#import "../ShaderDefs.h"
+
 using namespace metal;
-
-typedef struct {
-    float4x4 modelMatrix;
-    float4x4 viewMatrix;
-    float4x4 projectionMatrix;
-} Uniforms;
-
-typedef struct {
-    uint width;
-    uint height;
-} Params;
-
-struct VertexIn {
-    float4 position [[attribute(0)]];
-    float3 normal [[attribute(1)]];
-};
-
-struct VertexOut {
-    float4 position [[position]];
-    float3 normal;
-};
 
 fragment float4 fragment_plain(constant Params &params [[buffer(12)]],
                                VertexOut in [[stage_in]]) {

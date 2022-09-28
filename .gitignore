@@ -122,3 +122,13 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcshareddata
+xcshareddata/
