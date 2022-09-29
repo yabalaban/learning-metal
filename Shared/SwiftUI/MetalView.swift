@@ -9,24 +9,20 @@ import SwiftUI
 import MetalKit
 
 struct MetalView: View {
-    let options: Options
     @State private var renderer: Renderer
     @State private var metalView: MTKView
 
-    init(options: Options) {
+    init() {
         let view = MTKView()
-        let state = RendererState(choice: options.renderChoice)
-        _renderer = State(initialValue: Renderer(view: view, state: state))
+        _renderer = State(initialValue: Renderer(view: view))
         _metalView = State(initialValue: view)
-        self.options = options
     }
     
     var body: some View {
         VStack {
             MetalViewRepresentable(
                 view: $metalView,
-                renderer: renderer,
-                options: options
+                renderer: renderer
             )
         }
     }
@@ -43,7 +39,6 @@ typealias MyMetalView = UIView
 struct MetalViewRepresentable: ViewRepresentable {
     @Binding var view: MTKView
     let renderer: Renderer?
-    let options: Options
 
 #if os(macOS)
     func makeNSView(context: Context) -> some NSView {
@@ -63,14 +58,14 @@ struct MetalViewRepresentable: ViewRepresentable {
 #endif
 
     func updateMetalView() {
-        renderer?.state = RendererState(choice: options.renderChoice)
+        
     }
 }
 
 struct MetalView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            MetalView(options: Options())
+            MetalView()
             Text("Metal View")
         }
     }

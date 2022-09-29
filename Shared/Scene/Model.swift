@@ -13,13 +13,18 @@ final class Model: Transformable {
     var transform = Transform()
     var tiling: UInt32 = 1
     
-    init(name: String, device: MTLDevice, tiling: UInt32 = 1, vertexDescriptor: MDLVertexDescriptor = .defaultLayout) {
+    init(name: String,
+         device: MTLDevice,
+         tiling: UInt32 = 1,
+         scale: Float = 1,
+         vertexDescriptor: MDLVertexDescriptor = .defaultLayout) {
         guard let assetURL = Bundle.main.url(forResource: name, withExtension: nil) else {
             fatalError("Model: \(name) not found")
         }
         self.name = name
         self.tiling = tiling
-
+        self.transform.scale = scale
+        
         let allocator = MTKMeshBufferAllocator(device: device)
         let asset = MDLAsset(url: assetURL, vertexDescriptor: vertexDescriptor, bufferAllocator: allocator)
         do {

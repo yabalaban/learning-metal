@@ -7,10 +7,6 @@
 
 import MetalKit
 
-struct RendererState {
-    let choice: RenderChoice
-}
-
 final class Renderer: NSObject {
     struct Constants {
         static let fov: Float = 70
@@ -18,15 +14,18 @@ final class Renderer: NSObject {
         static let far: Float = 100
     }
     
-    var state: RendererState
-    var pipelineStates: [RenderChoice: MTLRenderPipelineState]
+    lazy var scene: GameScene = {
+        let modelRegistry = ModelRegistry(device: cls.device)
+        return GameScene(modelRegistry: modelRegistry)
+    }()
+    
+    var pipelineState: MTLRenderPipelineState
     var timer: Float = 0.0
     var uniforms = Uniforms()
     var params = Params()
     
-    init(view: MTKView, state: RendererState) {
-        self.state = state
-        self.pipelineStates = cls.populatePipelineStates(colorPixelFormat: view.colorPixelFormat)
+    init(view: MTKView) {
+        self.pipelineState = cls.createPipelineState(colorPixelFormat: view.colorPixelFormat)
         super.init()
         view.clearColor = MTLClearColor(red: 1.0, green: 1.0, blue: 0.9, alpha: 1.0)
         view.depthStencilPixelFormat = .depth32Float
@@ -36,49 +35,14 @@ final class Renderer: NSObject {
     }
 }
 
-// MARK: - Drawing
+// MARK: - Rendering
 extension Renderer {
-    func renderModel(stageType: StageType, encoder: MTLRenderCommandEncoder) {
-        guard let stage = cls.stageRegistry.stages[stageType] else { fatalError() }
-        updateViewMatrix(for: stageType)
-        for (type, var model) in stage.models {
-            updateModelMatrix(for: type, model: &model)
-            encoder.setVertexBytes(&uniforms, length: MemoryLayout<Uniforms>.stride, index: 11)
-            model.render(encoder: encoder, uniforms: &uniforms, params: &params)
-        }
-    }
-    
-    func renderPlain(encoder: MTLRenderCommandEncoder) {
-        encoder.setFragmentBytes(&params, length: MemoryLayout<Params>.stride, index: ParamsBuffer.index)
-        encoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 6)
-    }
-    
-    func updateViewMatrix(for stageType: StageType) {
-        let translation: float3
-        switch stageType {
-        case .train:
-            translation = [0, 0, -2]
-        case .house:
-            translation = [0, 1.5, -5]
-        case .sonic:
-            translation = [0, 15, -32]
-        }
+    func render(encoder: MTLRenderCommandEncoder) {
+        let translation: float3 = [0, 1.5, -5]
         uniforms.viewMatrix = float4x4(translation: translation).inverse
-    }
-    
-    func updateModelMatrix(for modelType: ModelType, model: inout Model) {
-        switch modelType {
-        case .train:
-            model.position.y = -0.6
-            model.rotation.y = sin(timer)
-        case .house:
-            model.rotation.y = sin(timer)
-        case .sonic:
-            model.position.y = -0.6
-            model.rotation.y = sin(timer) + Float(180).degreesToRadians
-        case .plane:
-            model.scale = 40
-            model.rotation.y = sin(timer)
+        scene.update(deltaTime: timer)
+        for model in scene.models {
+            model.render(encoder: encoder, uniforms: &uniforms, params: &params)
         }
     }
 }
@@ -101,18 +65,14 @@ extension Renderer: MTKViewDelegate {
     func draw(in view: MTKView) {
         guard let commandBuffer = Renderer.commandQueue.makeCommandBuffer(),
               let descriptor = view.currentRenderPassDescriptor,
-              let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor),
-              let pipelineState = pipelineStates[state.choice] else { return }
+              let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor)
+        else { return }
         
         timer += 0.005
         
         renderEncoder.setDepthStencilState(cls.depthStencilState)
         renderEncoder.setRenderPipelineState(pipelineState)
-        if case let .stage(stageType) = state.choice {
-            renderModel(stageType: stageType, encoder: renderEncoder)
-        } else {
-            renderPlain(encoder: renderEncoder)
-        }
+        render(encoder: renderEncoder)
         renderEncoder.endEncoding()
         guard let drawable = view.currentDrawable else {
             return
@@ -122,7 +82,7 @@ extension Renderer: MTKViewDelegate {
     }
 }
 
-// MARK: - Single setup
+// MARK: - Setup
 extension Renderer {
     typealias cls = Renderer
     
@@ -150,52 +110,18 @@ extension Renderer {
         descriptor.isDepthWriteEnabled = true
         return device.makeDepthStencilState(descriptor: descriptor)
     }()
-    static var stageRegistry: StageRegistry = {
-        StageRegistry(modelRegistry: ModelRegistry(device: cls.device))
-    }()
     
-    static func populatePipelineStates(colorPixelFormat: MTLPixelFormat) -> [RenderChoice: MTLRenderPipelineState] {
+    static func createPipelineState(colorPixelFormat: MTLPixelFormat) -> MTLRenderPipelineState {
         let pipelineDescriptor = MTLRenderPipelineDescriptor()
         pipelineDescriptor.colorAttachments[0].pixelFormat = colorPixelFormat
         pipelineDescriptor.depthAttachmentPixelFormat = .depth32Float
-        
-        let plainPipelineState: MTLRenderPipelineState = {
-            pipelineDescriptor.vertexFunction = cls.library.makeFunction(name: "vertex_plain")
-            pipelineDescriptor.fragmentFunction = cls.library.makeFunction(name: "fragment_plain")
-            do {
-                return try device.makeRenderPipelineState(descriptor: pipelineDescriptor)
-            } catch {
-                fatalError(error.localizedDescription)
-            }
-        }()
-
-        let modelPipelineState: MTLRenderPipelineState = {
-            pipelineDescriptor.vertexFunction = cls.library.makeFunction(name: "vertex_model")
-            pipelineDescriptor.fragmentFunction = cls.library.makeFunction(name: "fragment_model")
-            pipelineDescriptor.vertexDescriptor = MTLVertexDescriptor.defaultLayout
-            do {
-                return try device.makeRenderPipelineState(descriptor: pipelineDescriptor)
-            } catch {
-                fatalError(error.localizedDescription)
-            }
-        }()
-        
-        let textureModelPipelineState: MTLRenderPipelineState = {
-            pipelineDescriptor.vertexFunction = cls.library.makeFunction(name: "vertex_texture_model")
-            pipelineDescriptor.fragmentFunction = cls.library.makeFunction(name: "fragment_texture_model")
-            pipelineDescriptor.vertexDescriptor = MTLVertexDescriptor.uvLayout
-            do {
-                return try device.makeRenderPipelineState(descriptor: pipelineDescriptor)
-            } catch {
-                fatalError(error.localizedDescription)
-            }
-        }()
-        
-        return [
-            .plain: plainPipelineState,
-            .stage(.house): textureModelPipelineState,
-            .stage(.sonic): textureModelPipelineState,
-            .stage(.train): modelPipelineState,
-        ]
+        pipelineDescriptor.vertexFunction = cls.library.makeFunction(name: "vertex_main")
+        pipelineDescriptor.fragmentFunction = cls.library.makeFunction(name: "fragment_main")
+        pipelineDescriptor.vertexDescriptor = MTLVertexDescriptor.uvLayout
+        do {
+            return try device.makeRenderPipelineState(descriptor: pipelineDescriptor)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
 }

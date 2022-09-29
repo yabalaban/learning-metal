@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22DD94C28E64BD500797AC3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94B28E64BD500797AC3 /* GameScene.swift */; };
+		E22DD94D28E64BD500797AC3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94B28E64BD500797AC3 /* GameScene.swift */; };
 		E233066A28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */; };
 		E233066B28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */; };
 		E233066C28E3D7B000CCBD04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065B28E3D7AF00CCBD04 /* ContentView.swift */; };
@@ -15,8 +17,6 @@
 		E233066F28E3D7B000CCBD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E233065C28E3D7B000CCBD04 /* Assets.xcassets */; };
 		E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067A28E3D7F000CCBD04 /* MetalView.swift */; };
 		E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067A28E3D7F000CCBD04 /* MetalView.swift */; };
-		E233067F28E3D94300CCBD04 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067E28E3D94300CCBD04 /* Options.swift */; };
-		E233068028E3D94300CCBD04 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233067E28E3D94300CCBD04 /* Options.swift */; };
 		E233068228E3D99700CCBD04 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233068128E3D99700CCBD04 /* Renderer.swift */; };
 		E233068328E3D99700CCBD04 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233068128E3D99700CCBD04 /* Renderer.swift */; };
 		E233068828E3F5E400CCBD04 /* Vertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = E233068728E3F5E400CCBD04 /* Vertex.metal */; };
@@ -73,13 +73,10 @@
 		E298D05E28E4D0FE009778B7 /* sonic-the-hedgehog.obj in Resources */ = {isa = PBXBuildFile; fileRef = E298D05228E4D0FE009778B7 /* sonic-the-hedgehog.obj */; };
 		E298D06128E4E03D009778B7 /* Textures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E298D06028E4E03D009778B7 /* Textures.xcassets */; };
 		E298D06228E4E03D009778B7 /* Textures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E298D06028E4E03D009778B7 /* Textures.xcassets */; };
-		E298D06428E4E6AD009778B7 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06328E4E6AD009778B7 /* Stage.swift */; };
-		E298D06528E4E6AD009778B7 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06328E4E6AD009778B7 /* Stage.swift */; };
-		E298D06728E4E8F7009778B7 /* StageRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06628E4E8F7009778B7 /* StageRegistry.swift */; };
-		E298D06828E4E8F7009778B7 /* StageRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298D06628E4E8F7009778B7 /* StageRegistry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E22DD94B28E64BD500797AC3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_metalApp.swift; sourceTree = "<group>"; };
 		E233065B28E3D7AF00CCBD04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E233065C28E3D7B000CCBD04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +84,6 @@
 		E233066728E3D7B000CCBD04 /* learning-metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E233066928E3D7B000CCBD04 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E233067A28E3D7F000CCBD04 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
-		E233067E28E3D94300CCBD04 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		E233068128E3D99700CCBD04 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		E233068528E3F5AC00CCBD04 /* ShaderDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderDefs.h; sourceTree = "<group>"; };
 		E233068728E3F5E400CCBD04 /* Vertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vertex.metal; sourceTree = "<group>"; };
@@ -119,8 +115,6 @@
 		E298D05228E4D0FE009778B7 /* sonic-the-hedgehog.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonic-the-hedgehog.obj"; sourceTree = "<group>"; };
 		E298D05F28E4D117009778B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E298D06028E4E03D009778B7 /* Textures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Textures.xcassets; sourceTree = "<group>"; };
-		E298D06328E4E6AD009778B7 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
-		E298D06628E4E8F7009778B7 /* StageRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRegistry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,16 +147,13 @@
 		E233065928E3D7AF00CCBD04 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E298D06928E4E904009778B7 /* Objects */,
+				E298D06928E4E904009778B7 /* Scene */,
 				E23306A228E40C1500CCBD04 /* Models */,
 				E233068D28E3F69B00CCBD04 /* Extensions */,
 				E233068628E3F5D400CCBD04 /* Shaders */,
 				E233067828E3D7C800CCBD04 /* SwiftUI */,
 				E233069428E3FB9500CCBD04 /* Utility */,
 				E233068128E3D99700CCBD04 /* Renderer.swift */,
-				E298D04928E4CC29009778B7 /* TextureController.swift */,
-				E233069828E3FBC200CCBD04 /* Transform.swift */,
-				E298D04628E4C388009778B7 /* Mesh.swift */,
 				E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */,
 				E233068528E3F5AC00CCBD04 /* ShaderDefs.h */,
 				E23306A128E40A2000CCBD04 /* Common.h */,
@@ -192,19 +183,10 @@
 		E233067828E3D7C800CCBD04 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E233067D28E3D93000CCBD04 /* Model */,
 				E233065B28E3D7AF00CCBD04 /* ContentView.swift */,
 				E233067A28E3D7F000CCBD04 /* MetalView.swift */,
 			);
 			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		E233067D28E3D93000CCBD04 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E233067E28E3D94300CCBD04 /* Options.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E233068628E3F5D400CCBD04 /* Shaders */ = {
@@ -289,15 +271,17 @@
 			path = Sonic;
 			sourceTree = "<group>";
 		};
-		E298D06928E4E904009778B7 /* Objects */ = {
+		E298D06928E4E904009778B7 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				E298D06628E4E8F7009778B7 /* StageRegistry.swift */,
-				E298D06328E4E6AD009778B7 /* Stage.swift */,
 				E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */,
 				E233069B28E3FBC800CCBD04 /* Model.swift */,
+				E22DD94B28E64BD500797AC3 /* GameScene.swift */,
+				E298D04628E4C388009778B7 /* Mesh.swift */,
+				E298D04928E4CC29009778B7 /* TextureController.swift */,
+				E233069828E3FBC200CCBD04 /* Transform.swift */,
 			);
-			path = Objects;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,9 +417,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298D04428E4C242009778B7 /* Common+Extensions.swift in Sources */,
+				E22DD94C28E64BD500797AC3 /* GameScene.swift in Sources */,
 				E233069928E3FBC200CCBD04 /* Transform.swift in Sources */,
-				E298D06728E4E8F7009778B7 /* StageRegistry.swift in Sources */,
-				E233067F28E3D94300CCBD04 /* Options.swift in Sources */,
 				E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069C28E3FBC800CCBD04 /* Model.swift in Sources */,
 				E233068F28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
@@ -443,7 +426,6 @@
 				E298D04A28E4CC29009778B7 /* TextureController.swift in Sources */,
 				E233066C28E3D7B000CCBD04 /* ContentView.swift in Sources */,
 				E233068828E3F5E400CCBD04 /* Vertex.metal in Sources */,
-				E298D06428E4E6AD009778B7 /* Stage.swift in Sources */,
 				E298D04728E4C388009778B7 /* Mesh.swift in Sources */,
 				E233069228E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
 				E233068228E3D99700CCBD04 /* Renderer.swift in Sources */,
@@ -458,9 +440,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298D04528E4C242009778B7 /* Common+Extensions.swift in Sources */,
+				E22DD94D28E64BD500797AC3 /* GameScene.swift in Sources */,
 				E233069A28E3FBC200CCBD04 /* Transform.swift in Sources */,
-				E298D06828E4E8F7009778B7 /* StageRegistry.swift in Sources */,
-				E233068028E3D94300CCBD04 /* Options.swift in Sources */,
 				E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069D28E3FBC800CCBD04 /* Model.swift in Sources */,
 				E233069028E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
@@ -468,7 +449,6 @@
 				E298D04B28E4CC29009778B7 /* TextureController.swift in Sources */,
 				E233066D28E3D7B000CCBD04 /* ContentView.swift in Sources */,
 				E233068928E3F5E400CCBD04 /* Vertex.metal in Sources */,
-				E298D06528E4E6AD009778B7 /* Stage.swift in Sources */,
 				E298D04828E4C388009778B7 /* Mesh.swift in Sources */,
 				E233069328E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
 				E233068328E3D99700CCBD04 /* Renderer.swift in Sources */,
