@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		E22DD94C28E64BD500797AC3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94B28E64BD500797AC3 /* GameScene.swift */; };
 		E22DD94D28E64BD500797AC3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94B28E64BD500797AC3 /* GameScene.swift */; };
+		E22DD94F28E658A500797AC3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94E28E658A500797AC3 /* Camera.swift */; };
+		E22DD95028E658A500797AC3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94E28E658A500797AC3 /* Camera.swift */; };
+		E22DD95228E65BB900797AC3 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD95128E65BB900797AC3 /* InputController.swift */; };
+		E22DD95328E65BB900797AC3 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD95128E65BB900797AC3 /* InputController.swift */; };
+		E22DD95528E65F4A00797AC3 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD95428E65F4A00797AC3 /* Movement.swift */; };
+		E22DD95628E65F4A00797AC3 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD95428E65F4A00797AC3 /* Movement.swift */; };
 		E233066A28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */; };
 		E233066B28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */; };
 		E233066C28E3D7B000CCBD04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233065B28E3D7AF00CCBD04 /* ContentView.swift */; };
@@ -77,6 +83,9 @@
 
 /* Begin PBXFileReference section */
 		E22DD94B28E64BD500797AC3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E22DD94E28E658A500797AC3 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		E22DD95128E65BB900797AC3 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		E22DD95428E65F4A00797AC3 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
 		E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_metalApp.swift; sourceTree = "<group>"; };
 		E233065B28E3D7AF00CCBD04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E233065C28E3D7B000CCBD04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +162,9 @@
 				E233068628E3F5D400CCBD04 /* Shaders */,
 				E233067828E3D7C800CCBD04 /* SwiftUI */,
 				E233069428E3FB9500CCBD04 /* Utility */,
+				E22DD95428E65F4A00797AC3 /* Movement.swift */,
+				E233069828E3FBC200CCBD04 /* Transform.swift */,
+				E22DD95128E65BB900797AC3 /* InputController.swift */,
 				E233068128E3D99700CCBD04 /* Renderer.swift */,
 				E233065A28E3D7AF00CCBD04 /* learning_metalApp.swift */,
 				E233068528E3F5AC00CCBD04 /* ShaderDefs.h */,
@@ -277,9 +289,9 @@
 				E233069E28E3FCE900CCBD04 /* ModelRegistry.swift */,
 				E233069B28E3FBC800CCBD04 /* Model.swift */,
 				E22DD94B28E64BD500797AC3 /* GameScene.swift */,
+				E22DD94E28E658A500797AC3 /* Camera.swift */,
 				E298D04628E4C388009778B7 /* Mesh.swift */,
 				E298D04928E4CC29009778B7 /* TextureController.swift */,
-				E233069828E3FBC200CCBD04 /* Transform.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -418,9 +430,11 @@
 			files = (
 				E298D04428E4C242009778B7 /* Common+Extensions.swift in Sources */,
 				E22DD94C28E64BD500797AC3 /* GameScene.swift in Sources */,
+				E22DD94F28E658A500797AC3 /* Camera.swift in Sources */,
 				E233069928E3FBC200CCBD04 /* Transform.swift in Sources */,
 				E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069C28E3FBC800CCBD04 /* Model.swift in Sources */,
+				E22DD95228E65BB900797AC3 /* InputController.swift in Sources */,
 				E233068F28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
 				E233069F28E3FCE900CCBD04 /* ModelRegistry.swift in Sources */,
 				E298D04A28E4CC29009778B7 /* TextureController.swift in Sources */,
@@ -428,6 +442,7 @@
 				E233068828E3F5E400CCBD04 /* Vertex.metal in Sources */,
 				E298D04728E4C388009778B7 /* Mesh.swift in Sources */,
 				E233069228E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
+				E22DD95528E65F4A00797AC3 /* Movement.swift in Sources */,
 				E233068228E3D99700CCBD04 /* Renderer.swift in Sources */,
 				E233068B28E3F5F000CCBD04 /* Fragment.metal in Sources */,
 				E233066A28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */,
@@ -441,9 +456,11 @@
 			files = (
 				E298D04528E4C242009778B7 /* Common+Extensions.swift in Sources */,
 				E22DD94D28E64BD500797AC3 /* GameScene.swift in Sources */,
+				E22DD95028E658A500797AC3 /* Camera.swift in Sources */,
 				E233069A28E3FBC200CCBD04 /* Transform.swift in Sources */,
 				E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069D28E3FBC800CCBD04 /* Model.swift in Sources */,
+				E22DD95328E65BB900797AC3 /* InputController.swift in Sources */,
 				E233069028E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
 				E23306A028E3FCE900CCBD04 /* ModelRegistry.swift in Sources */,
 				E298D04B28E4CC29009778B7 /* TextureController.swift in Sources */,
@@ -451,6 +468,7 @@
 				E233068928E3F5E400CCBD04 /* Vertex.metal in Sources */,
 				E298D04828E4C388009778B7 /* Mesh.swift in Sources */,
 				E233069328E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
+				E22DD95628E65F4A00797AC3 /* Movement.swift in Sources */,
 				E233068328E3D99700CCBD04 /* Renderer.swift in Sources */,
 				E233068C28E3F5F000CCBD04 /* Fragment.metal in Sources */,
 				E233066B28E3D7B000CCBD04 /* learning_metalApp.swift in Sources */,

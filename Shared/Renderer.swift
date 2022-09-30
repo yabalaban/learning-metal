@@ -20,7 +20,7 @@ final class Renderer: NSObject {
     }()
     
     var pipelineState: MTLRenderPipelineState
-    var timer: Float = 0.0
+    var lastTime: Double = CFAbsoluteTimeGetCurrent()
     var uniforms = Uniforms()
     var params = Params()
     
@@ -38,9 +38,12 @@ final class Renderer: NSObject {
 // MARK: - Rendering
 extension Renderer {
     func render(encoder: MTLRenderCommandEncoder) {
-        let translation: float3 = [0, 1.5, -5]
-        uniforms.viewMatrix = float4x4(translation: translation).inverse
-        scene.update(deltaTime: timer)
+        let currentTime = CFAbsoluteTimeGetCurrent()
+        let deltaTime = Float(currentTime - lastTime)
+        lastTime = currentTime
+        scene.update(deltaTime: deltaTime)
+        uniforms.viewMatrix = scene.camera.viewMatrix
+        uniforms.projectionMatrix = scene.camera.projectionMatrix
         for model in scene.models {
             model.render(encoder: encoder, uniforms: &uniforms, params: &params)
         }
@@ -50,16 +53,7 @@ extension Renderer {
 // MARK: - MTKViewDelegate
 extension Renderer: MTKViewDelegate {
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
-        params.height = UInt32(size.height)
-        params.width = UInt32(size.width)
-        
-        let aspect = Float(view.bounds.width / view.bounds.height)
-        uniforms.projectionMatrix = float4x4(
-            projectionFov: Constants.fov.degreesToRadians,
-            near: Constants.near,
-            far: Constants.far,
-            aspect: aspect
-        )
+        scene.update(size: size)
     }
     
     func draw(in view: MTKView) {
@@ -67,8 +61,6 @@ extension Renderer: MTKViewDelegate {
               let descriptor = view.currentRenderPassDescriptor,
               let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor)
         else { return }
-        
-        timer += 0.005
         
         renderEncoder.setDepthStencilState(cls.depthStencilState)
         renderEncoder.setRenderPipelineState(pipelineState)
