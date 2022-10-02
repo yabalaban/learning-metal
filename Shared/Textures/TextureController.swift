@@ -12,7 +12,7 @@ enum TextureController {
 
     static func loadTexture(filename: String, device: MTLDevice) -> MTLTexture {
         let loader = MTKTextureLoader(device: device)
-        if let texture = try? loader.newTexture(name: filename, scaleFactor: 1.0, bundle: Bundle.main, options: nil) {
+        if let texture = try? loader.newTexture(name: filename.fileName, scaleFactor: 1.0, bundle: Bundle.main, options: nil) {
             return texture
         }
         

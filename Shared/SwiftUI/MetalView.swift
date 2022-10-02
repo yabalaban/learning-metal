@@ -9,20 +9,23 @@ import SwiftUI
 import MetalKit
 
 struct MetalView: View {
-    @State private var renderer: Renderer
+    @State private var gameController: GameController
     @State private var metalView: MTKView
+    private let options: Options
 
-    init() {
+    init(options: Options) {
         let view = MTKView()
-        _renderer = State(initialValue: Renderer(view: view))
+        _gameController = State(initialValue: GameController(metalView: view, options: options))
         _metalView = State(initialValue: view)
+        self.options = options
     }
     
     var body: some View {
         VStack {
             MetalViewRepresentable(
                 view: $metalView,
-                renderer: renderer
+                gameController: gameController,
+                options: options
             )
         }
     }
@@ -30,16 +33,15 @@ struct MetalView: View {
 
 #if os(macOS)
 typealias ViewRepresentable = NSViewRepresentable
-typealias MyMetalView = NSView
 #elseif os(iOS)
 typealias ViewRepresentable = UIViewRepresentable
-typealias MyMetalView = UIView
 #endif
 
 struct MetalViewRepresentable: ViewRepresentable {
     @Binding var view: MTKView
-    let renderer: Renderer?
-
+    let gameController: GameController?
+    let options: Options
+    
 #if os(macOS)
     func makeNSView(context: Context) -> some NSView {
         return view
@@ -58,14 +60,14 @@ struct MetalViewRepresentable: ViewRepresentable {
 #endif
 
     func updateMetalView() {
-        
+        gameController?.update(options: options, metalView: view)
     }
 }
 
 struct MetalView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            MetalView()
+            MetalView(options: Options(scene: .house))
             Text("Metal View")
         }
     }

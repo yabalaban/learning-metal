@@ -13,13 +13,23 @@ private struct Style {
 }
 
 struct ContentView: View {
+    @State var gameScene: Options.Scene = .house
+    
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
-                MetalView()
+                MetalView(options: Options(scene: gameScene))
                     .border(Color.black, width: Style.borderWidth)
                     .frame(width: Style.frameSize, height: Style.frameSize)
             }
+            Picker(
+                selection: $gameScene,
+                label: Text("Scene")) {
+                    Text("House").tag(Options.Scene.house)
+                    Text("Sonic").tag(Options.Scene.sonic)
+                    Text("Train").tag(Options.Scene.train)
+                }
+                .pickerStyle(SegmentedPickerStyle())
         }
         .padding()
     }
