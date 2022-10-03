@@ -24,15 +24,15 @@ struct ArcballCamera: Camera {
     }
     var target: float3 = .zero
     var distance: Float = 2.5
+    private(set) var fov = Float(70).degreesToRadians
+    private(set) var aspect: Float = 1.0
+    private(set) var near: Float = 0.1
+    private(set) var far: Float = 100
     
     private let minDistance: Float = 0
     private let maxDistance: Float = 20
-    private var aspect: Float = 1.0
-    private var fov = Float(70).degreesToRadians
-    private var near: Float = 0.1
-    private var far: Float = 100
     
-    init(input: InputController) {
+    init(input: InputController = .shared) {
         self.input = input
     }
     

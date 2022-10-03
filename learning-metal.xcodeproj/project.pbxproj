@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E220CA4928EB5EAE000A4499 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = E220CA4528EB5EAE000A4499 /* sphere.obj */; };
+		E220CA4A28EB5EAE000A4499 /* sphere.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E220CA4628EB5EAE000A4499 /* sphere.mtl */; };
+		E220CA4B28EB5EAE000A4499 /* gizmo.usd in Resources */ = {isa = PBXBuildFile; fileRef = E220CA4828EB5EAE000A4499 /* gizmo.usd */; };
+		E220CA4D28EB5EDA000A4499 /* SphereGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220CA4C28EB5EDA000A4499 /* SphereGameScene.swift */; };
+		E220CA4E28EB6099000A4499 /* SphereGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220CA4C28EB5EDA000A4499 /* SphereGameScene.swift */; };
+		E220CA5028EB61C7000A4499 /* LightingModel.metal in Sources */ = {isa = PBXBuildFile; fileRef = E220CA4F28EB61C7000A4499 /* LightingModel.metal */; };
+		E220CA5128EB61CA000A4499 /* LightingModel.metal in Sources */ = {isa = PBXBuildFile; fileRef = E220CA4F28EB61C7000A4499 /* LightingModel.metal */; };
+		E220CA5228EB6442000A4499 /* sphere.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E220CA4628EB5EAE000A4499 /* sphere.mtl */; };
+		E220CA5328EB6442000A4499 /* gizmo.usd in Resources */ = {isa = PBXBuildFile; fileRef = E220CA4828EB5EAE000A4499 /* gizmo.usd */; };
+		E220CA5428EB6442000A4499 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = E220CA4528EB5EAE000A4499 /* sphere.obj */; };
+		E220CA5628EB6D55000A4499 /* SceneLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220CA5528EB6D55000A4499 /* SceneLighting.swift */; };
+		E220CA5728EB6D55000A4499 /* SceneLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220CA5528EB6D55000A4499 /* SceneLighting.swift */; };
+		E220CA5D28EB71E5000A4499 /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = E220CA5C28EB71E5000A4499 /* Lighting.metal */; };
+		E220CA5E28EB71E5000A4499 /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = E220CA5C28EB71E5000A4499 /* Lighting.metal */; };
 		E22DD94C28E64BD500797AC3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94B28E64BD500797AC3 /* GameScene.swift */; };
 		E22DD94D28E64BD500797AC3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94B28E64BD500797AC3 /* GameScene.swift */; };
 		E22DD94F28E658A500797AC3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DD94E28E658A500797AC3 /* Camera.swift */; };
@@ -88,6 +102,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E220CA4528EB5EAE000A4499 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		E220CA4628EB5EAE000A4499 /* sphere.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.mtl; sourceTree = "<group>"; };
+		E220CA4828EB5EAE000A4499 /* gizmo.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = gizmo.usd; sourceTree = "<group>"; };
+		E220CA4C28EB5EDA000A4499 /* SphereGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereGameScene.swift; sourceTree = "<group>"; };
+		E220CA4F28EB61C7000A4499 /* LightingModel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LightingModel.metal; sourceTree = "<group>"; };
+		E220CA5528EB6D55000A4499 /* SceneLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLighting.swift; sourceTree = "<group>"; };
+		E220CA5828EB711E000A4499 /* Lighting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lighting.h; sourceTree = "<group>"; };
+		E220CA5C28EB71E5000A4499 /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
 		E22DD94B28E64BD500797AC3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E22DD94E28E658A500797AC3 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		E22DD95128E65BB900797AC3 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
@@ -100,7 +122,6 @@
 		E233066928E3D7B000CCBD04 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E233067A28E3D7F000CCBD04 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		E233068128E3D99700CCBD04 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		E233068528E3F5AC00CCBD04 /* ShaderDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderDefs.h; sourceTree = "<group>"; };
 		E233068E28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLVertexDescriptor+Default.swift"; sourceTree = "<group>"; };
 		E233069128E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MDLVertexDescriptor+Default.swift"; sourceTree = "<group>"; };
 		E233069528E3FBA200CCBD04 /* MathLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
@@ -153,6 +174,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E220CA4428EB5EAE000A4499 /* Sphere */ = {
+			isa = PBXGroup;
+			children = (
+				E220CA4528EB5EAE000A4499 /* sphere.obj */,
+				E220CA4628EB5EAE000A4499 /* sphere.mtl */,
+			);
+			path = Sphere;
+			sourceTree = "<group>";
+		};
+		E220CA4728EB5EAE000A4499 /* Gizmo */ = {
+			isa = PBXGroup;
+			children = (
+				E220CA4828EB5EAE000A4499 /* gizmo.usd */,
+			);
+			path = Gizmo;
+			sourceTree = "<group>";
+		};
 		E233065428E3D7AE00CCBD04 = {
 			isa = PBXGroup;
 			children = (
@@ -211,9 +249,11 @@
 		E233068628E3F5D400CCBD04 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				E233068528E3F5AC00CCBD04 /* ShaderDefs.h */,
 				E2E63EA528EA08F800540780 /* Model.metal */,
 				E2E63EA828EA095300540780 /* TextureModel.metal */,
+				E220CA4F28EB61C7000A4499 /* LightingModel.metal */,
+				E220CA5828EB711E000A4499 /* Lighting.h */,
+				E220CA5C28EB71E5000A4499 /* Lighting.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -238,6 +278,8 @@
 		E23306A228E40C1500CCBD04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E220CA4728EB5EAE000A4499 /* Gizmo */,
+				E220CA4428EB5EAE000A4499 /* Sphere */,
 				E298D04C28E4D0FE009778B7 /* Sonic */,
 				E23306A528E40C4A00CCBD04 /* Ground */,
 				E23306AD28E40C4A00CCBD04 /* LowPolyHouse */,
@@ -275,6 +317,7 @@
 				E22DD94B28E64BD500797AC3 /* GameScene.swift */,
 				E22DD94E28E658A500797AC3 /* Camera.swift */,
 				E2E63E9B28E9F7D500540780 /* Hardware.swift */,
+				E220CA5528EB6D55000A4499 /* SceneLighting.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -325,6 +368,7 @@
 				E2E63EAD28EA0AA100540780 /* HouseGameScene.swift */,
 				E2E63EB028EA0AA800540780 /* SonicGameScene.swift */,
 				E2E63EB328EA0AAF00540780 /* TrainGameScene.swift */,
+				E220CA4C28EB5EDA000A4499 /* SphereGameScene.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -422,9 +466,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298D05D28E4D0FE009778B7 /* sonic-the-hedgehog.obj in Resources */,
+				E220CA4B28EB5EAE000A4499 /* gizmo.usd in Resources */,
 				E23306C328E40C4B00CCBD04 /* lowpoly-house.obj in Resources */,
 				E233066E28E3D7B000CCBD04 /* Assets.xcassets in Resources */,
 				E298D06128E4E03D009778B7 /* Textures.xcassets in Resources */,
+				E220CA4A28EB5EAE000A4499 /* sphere.mtl in Resources */,
+				E220CA4928EB5EAE000A4499 /* sphere.obj in Resources */,
 				E23306B728E40C4B00CCBD04 /* plane.mtl in Resources */,
 				E298D05528E4D0FE009778B7 /* sonic-the-hedgehog.mtl in Resources */,
 				E23306C528E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */,
@@ -441,10 +488,13 @@
 				E23306C428E40C4B00CCBD04 /* lowpoly-house.obj in Resources */,
 				E233066F28E3D7B000CCBD04 /* Assets.xcassets in Resources */,
 				E298D06228E4E03D009778B7 /* Textures.xcassets in Resources */,
+				E220CA5228EB6442000A4499 /* sphere.mtl in Resources */,
 				E23306B828E40C4B00CCBD04 /* plane.mtl in Resources */,
+				E220CA5328EB6442000A4499 /* gizmo.usd in Resources */,
 				E298D05628E4D0FE009778B7 /* sonic-the-hedgehog.mtl in Resources */,
 				E23306C628E40C4B00CCBD04 /* lowpoly-house.mtl in Resources */,
 				E23306B628E40C4B00CCBD04 /* plane.obj in Resources */,
+				E220CA5428EB6442000A4499 /* sphere.obj in Resources */,
 				E23306C028E40C4B00CCBD04 /* train.usd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298D04428E4C242009778B7 /* Common+Extensions.swift in Sources */,
+				E220CA5028EB61C7000A4499 /* LightingModel.metal in Sources */,
 				E2E63EB428EA0AAF00540780 /* TrainGameScene.swift in Sources */,
 				E2E63EBB28EA0B3700540780 /* FirstPersonCamera.swift in Sources */,
 				E23F823328E7772400029661 /* GameController.swift in Sources */,
@@ -466,6 +517,7 @@
 				E233067B28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069C28E3FBC800CCBD04 /* Model.swift in Sources */,
 				E22DD95228E65BB900797AC3 /* InputController.swift in Sources */,
+				E220CA5D28EB71E5000A4499 /* Lighting.metal in Sources */,
 				E233068F28E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
 				E2E63E9C28E9F7D500540780 /* Hardware.swift in Sources */,
 				E2E63EA628EA08F800540780 /* Model.metal in Sources */,
@@ -474,11 +526,13 @@
 				E2E63EB128EA0AA800540780 /* SonicGameScene.swift in Sources */,
 				E2E63EC128EA0B6D00540780 /* OrthographicCamera.swift in Sources */,
 				E298D04A28E4CC29009778B7 /* TextureController.swift in Sources */,
+				E220CA4D28EB5EDA000A4499 /* SphereGameScene.swift in Sources */,
 				E2E63EA028EA03D900540780 /* String+Extensions.swift in Sources */,
 				E233066C28E3D7B000CCBD04 /* ContentView.swift in Sources */,
 				E2E63EA928EA095300540780 /* TextureModel.metal in Sources */,
 				E2E63EA328EA054400540780 /* Options.swift in Sources */,
 				E298D04728E4C388009778B7 /* Mesh.swift in Sources */,
+				E220CA5628EB6D55000A4499 /* SceneLighting.swift in Sources */,
 				E233069228E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
 				E2E63EAE28EA0AA100540780 /* HouseGameScene.swift in Sources */,
 				E22DD95528E65F4A00797AC3 /* Movement.swift in Sources */,
@@ -494,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E298D04528E4C242009778B7 /* Common+Extensions.swift in Sources */,
+				E220CA5128EB61CA000A4499 /* LightingModel.metal in Sources */,
 				E2E63EB528EA0AAF00540780 /* TrainGameScene.swift in Sources */,
 				E2E63EBC28EA0B3700540780 /* FirstPersonCamera.swift in Sources */,
 				E23F823428E7772400029661 /* GameController.swift in Sources */,
@@ -503,6 +558,7 @@
 				E233067C28E3D7F000CCBD04 /* MetalView.swift in Sources */,
 				E233069D28E3FBC800CCBD04 /* Model.swift in Sources */,
 				E22DD95328E65BB900797AC3 /* InputController.swift in Sources */,
+				E220CA5E28EB71E5000A4499 /* Lighting.metal in Sources */,
 				E233069028E3F6AB00CCBD04 /* MTLVertexDescriptor+Default.swift in Sources */,
 				E2E63E9D28E9F7D500540780 /* Hardware.swift in Sources */,
 				E2E63EA728EA08F800540780 /* Model.metal in Sources */,
@@ -511,11 +567,13 @@
 				E2E63EB228EA0AA800540780 /* SonicGameScene.swift in Sources */,
 				E2E63EC228EA0B6D00540780 /* OrthographicCamera.swift in Sources */,
 				E298D04B28E4CC29009778B7 /* TextureController.swift in Sources */,
+				E220CA4E28EB6099000A4499 /* SphereGameScene.swift in Sources */,
 				E2E63EA128EA03D900540780 /* String+Extensions.swift in Sources */,
 				E233066D28E3D7B000CCBD04 /* ContentView.swift in Sources */,
 				E2E63EAA28EA095300540780 /* TextureModel.metal in Sources */,
 				E2E63EA428EA054400540780 /* Options.swift in Sources */,
 				E298D04828E4C388009778B7 /* Mesh.swift in Sources */,
+				E220CA5728EB6D55000A4499 /* SceneLighting.swift in Sources */,
 				E233069328E3F6B900CCBD04 /* MDLVertexDescriptor+Default.swift in Sources */,
 				E2E63EAF28EA0AA100540780 /* HouseGameScene.swift in Sources */,
 				E22DD95628E65F4A00797AC3 /* Movement.swift in Sources */,

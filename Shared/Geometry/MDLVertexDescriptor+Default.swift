@@ -31,4 +31,15 @@ extension MDLVertexDescriptor {
         
         return vertexDescriptor
     }
+    
+    static var colorLayout: MDLVertexDescriptor {
+        let vertexDescriptor = self.uvLayout
+        
+        var offset = 0
+        vertexDescriptor.attributes[Color.index] = MDLVertexAttribute(name: MDLVertexAttributeColor, format: .float3, offset: offset, bufferIndex: ColorBuffer.index)
+        offset += MemoryLayout<float3>.stride
+        vertexDescriptor.layouts[ColorBuffer.index] = MDLVertexBufferLayout(stride: offset)
+        
+        return vertexDescriptor
+    }
 }

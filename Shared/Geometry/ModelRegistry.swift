@@ -13,6 +13,8 @@ final class ModelRegistry {
         case train = "train.usd"
         case house = "lowpoly-house.obj"
         case plane = "plane.obj"
+        case sphere = "sphere.obj"
+        case gizmo = "gizmo.usd"
     }
     
     private var loaded: [ModelType: Model] = [:]

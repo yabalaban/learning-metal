@@ -13,7 +13,7 @@ private struct Style {
 }
 
 struct ContentView: View {
-    @State var gameScene: Options.Scene = .house
+    @State var gameScene: Options.Scene = .sphere
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,6 +25,7 @@ struct ContentView: View {
             Picker(
                 selection: $gameScene,
                 label: Text("Scene")) {
+                    Text("Sphere").tag(Options.Scene.sphere)
                     Text("House").tag(Options.Scene.house)
                     Text("Sonic").tag(Options.Scene.sonic)
                     Text("Train").tag(Options.Scene.train)

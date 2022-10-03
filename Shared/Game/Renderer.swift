@@ -42,6 +42,10 @@ extension Renderer {
         renderEncoder.setDepthStencilState(hardware.depthStencilState)
         renderEncoder.setRenderPipelineState(pipelineState)
         
+        var lights = scene.lighting.lights
+        renderEncoder.setFragmentBytes(&lights,
+                                       length: MemoryLayout<Light>.stride * lights.count,
+                                       index: LightBuffer.index)
         for model in scene.models {
             model.render(encoder: renderEncoder, uniforms: &uniforms, params: &params)
         }
@@ -55,6 +59,9 @@ extension Renderer {
     }
     
     private func updateUniforms(scene: inout GameScene) {
+        params.lightCount = UInt32(scene.lighting.lights.count)
+        params.cameraPosition = scene.camera.position
+        
         uniforms.viewMatrix = scene.camera.viewMatrix
         uniforms.projectionMatrix = scene.camera.projectionMatrix
     }

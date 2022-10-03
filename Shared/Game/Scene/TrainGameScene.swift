@@ -11,7 +11,8 @@ struct TrainGameScene: GameScene {
     private static let vertexDescriptor: MDLVertexDescriptor = .uvLayout
     
     let models: [Model]
-    private(set) var camera: Camera = PlayerCamera()
+    let lighting = SceneLighting()
+    private(set) var camera: Camera = ArcballCamera()
     private var defaultView: Transform {
         Transform(
             position: [0, 0, -2],

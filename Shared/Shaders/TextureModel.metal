@@ -6,13 +6,23 @@
 //
 
 #include <metal_stdlib>
-
 #import "../Common.h"
-#import "ShaderDefs.h"
 
 using namespace metal;
 
-vertex VertexOut vertex_texture_main(VertexIn in [[stage_in]],
+struct VertexIn {
+    float4 position [[attribute(Position)]];
+    float3 normal [[attribute(Normal)]];
+    float2 uv [[attribute(UV)]];
+};
+
+struct VertexOut {
+    float4 position [[position]];
+    float3 normal;
+    float2 uv;
+};
+
+vertex VertexOut vertex_texture_main(const VertexIn in [[stage_in]],
                                      constant Uniforms &uniforms [[buffer(UniformsBuffer)]]) {
     return (VertexOut) {
         .position = uniforms.projectionMatrix
@@ -24,8 +34,8 @@ vertex VertexOut vertex_texture_main(VertexIn in [[stage_in]],
     };
 }
 
-fragment float4 fragment_texture_main(constant Params &params [[buffer(ParamsBuffer)]],
-                                      VertexOut in [[stage_in]],
+fragment float4 fragment_texture_main(const VertexOut in [[stage_in]],
+                                      constant Params &params [[buffer(ParamsBuffer)]],
                                       texture2d<float> baseColorTexture [[texture(BaseColor)]]) {
     constexpr sampler textureSampler(filter::linear, address::repeat, mip_filter::linear, max_anisotropy(8));
     float3 baseColor = baseColorTexture.sample(textureSampler, in.uv * params.tiling).rgb;

@@ -7,6 +7,7 @@
 
 struct Options: Hashable {
     enum Scene: Hashable {
+        case sphere
         case house
         case train
         case sonic

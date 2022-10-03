@@ -37,6 +37,9 @@ final class GameController: NSObject {
     private func makeScene() -> GameScene {
         let scene: GameScene
         switch options.scene {
+        case .sphere:
+            scene = SphereGameScene(modelRegistry: modelRegistry,
+                                    library: hardware.library)
         case .train:
             scene = TrainGameScene(modelRegistry: modelRegistry,
                                    library: hardware.library)

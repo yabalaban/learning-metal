@@ -37,6 +37,7 @@ extension Model {
     func render(encoder: MTLRenderCommandEncoder, uniforms: inout Uniforms, params: inout Params) {
         params.tiling = tiling
         uniforms.modelMatrix = transform.modelMatrix
+        uniforms.normalMatrix = uniforms.modelMatrix.upperLeft
         
         encoder.setVertexBytes(&uniforms, length: MemoryLayout<Uniforms>.stride, index: UniformsBuffer.index)
         encoder.setFragmentBytes(&params, length: MemoryLayout<Params>.stride, index: ParamsBuffer.index)

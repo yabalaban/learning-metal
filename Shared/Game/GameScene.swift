@@ -10,6 +10,7 @@ import MetalKit
 protocol GameScene {
     var models: [Model] { get }
     var camera: Camera { get }
+    var lighting: SceneLighting { get }
     
     mutating func update(deltaTime: Float)
     mutating func update(size: CGSize)
